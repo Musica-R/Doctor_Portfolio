@@ -1,0 +1,252 @@
+.treatments {
+  padding: 80px 20px;
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  
+}
+
+.subtitle {
+  margin-top: 12px;
+  color: #64748b;
+  font-size: 16px;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 50px 40px;
+}
+
+.card {
+  text-align: left;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.icon-tre {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #eef4ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  color: #2563eb;
+  font-size: 29px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.span-learn{
+  font-size: 13px !important;
+}
+.card p {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.learn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.learn p{
+  font-size: 16px;
+  color: #2563eb !important;
+  font-weight: 600;
+}
+
+.learn span{
+  font-size: 20px;
+  color: #2563eb !important;
+  font-weight: 800;
+}
+
+.cta {
+  margin-top: 60px;
+  padding: 14px 28px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid #2563eb;
+  background: transparent;
+  color: #2563eb;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+
+  .treatments {
+    padding: 60px 6%;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .grid {
+    gap: 40px 30px;
+  }
+
+  .card h3 {
+    font-size: 17px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+
+  .learn p {
+    font-size: 15px;
+  }
+
+  .learn span {
+    font-size: 22px;
+  }
+
+  .cta {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .treatments {
+    padding: 50px 20px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .grid {
+    gap: 32px 24px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+
+  .learn p {
+    font-size: 14px;
+  }
+
+  .learn span {
+    font-size: 20px;
+  }
+
+  .cta {
+    font-size: 16px;
+    padding: 12px 22px;
+  }
+
+}
+@media (max-width: 480px) {
+
+  .treatments {
+    padding: 40px 16px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  .grid {
+    gap: 28px 16px;
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    text-align: center;
+  }
+
+  .icon-tre {
+    width: 44px;
+    height: 44px;
+    font-size: 26px;
+    margin: 0 auto 12px auto;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+
+  .learn {
+    justify-content: center;
+  }
+
+  .learn p {
+    font-size: 14px;
+  }
+
+  .learn span {
+    font-size: 20px;
+  }
+
+  .cta {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 0;
+    margin-top: 20px;
+  }
+  .card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px;
+  background: #F9FAFB;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+
+}

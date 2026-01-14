@@ -1,0 +1,397 @@
+.contact-page {
+  background: #F9FAFB;
+}
+
+.contact-header {
+  text-align: center;
+  padding: 20px 20px;
+}
+
+.small-label {
+  color: #2884FF;
+  font-size: 15px;
+}
+
+.contact-header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  padding: 20px 0px;
+}
+
+.contact-header p {
+  color: #6b7280;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.call {
+  gap: 5px !important;
+}
+
+.right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 44px;
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.08),
+    0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+.Contact-contact-cards {
+  padding: 80px 40px;
+}
+
+.contact-card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-card-title svg {
+  color: #2563eb;
+  background-color: #DBEAFE;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+.booking-contact-card label {
+  font-size: 14px;
+  color: #374151;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding-bottom: 50px;
+}
+
+.booking-contact-card input,
+.booking-contact-card select,
+.booking-contact-card textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  margin-top: 6px;
+}
+
+.booking-contact-card textarea {
+  height: 120px;
+  margin-top: 10px;
+}
+
+.primary-btn {
+  width: 100%;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 16px;
+  /* margin-top: 20px; */
+  cursor: pointer;
+}
+
+.form-note {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.whatsapp-btn {
+  width: 100%;
+  background: #22c55e;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  gap: 8px;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsapp-btn svg {
+  font-size: 22px;
+}
+
+.outline-btn {
+  width: 100%;
+  padding: 12px;
+  background: none;
+  border: 1px solid #2563eb;
+  color: #2563eb;
+  border-radius: 10px;
+  /* margin-top: 14px; */
+}
+
+.map-placeholder {
+  height: 140px;
+  background: #f3f4f6;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 14px 0;
+}
+
+.stars {
+  color: #facc15;
+  font-size: 22px;
+}
+
+.review-text {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.review-user {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.flex-wrapper {
+  position: relative;
+  left: 40px;
+}
+
+.faq h3 {
+  margin-bottom: 16px;
+}
+
+.faq {
+  padding: 20px 0px;
+}
+
+.faq h4 {
+  margin-top: 16px;
+  font-size: 15px;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact-card-titles {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-card-titles svg {
+  color: #2563eb;
+  font-size: 30px;
+}
+
+.contact-card-titles h3 {
+  font-weight: bold;
+}
+
+.add {
+  position: relative;
+  left: 40px;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.question h4 {
+  font-weight: 600;
+}
+
+.question p {
+  color: #4e5763;
+  font-weight: 500;
+}
+
+.contact-cards {
+  border-radius: 14px;
+  padding: 44px;
+  margin-bottom: 24px;
+}
+
+.contact-cards-p {
+  position: relative;
+  left: 20px;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px 0px;
+  position: relative;
+  left: 40px;
+}
+
+.display p {
+  color: #374151;
+  font-weight: 600;
+}
+
+.display span {
+  color: #6b7280;
+}
+
+.fonts {
+  font-size: 23px !important;
+}
+
+.rev {
+  padding: 40px;
+}
+
+@media (max-width: 1024px) {
+  .contact-container {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 24px;
+  }
+
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-card,
+  .contact-cards {
+    padding: 36px;
+  }
+
+  .Contact-contact-cards {
+    padding: 60px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-header h1 {
+    font-size: 30px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding-bottom: 30px;
+  }
+
+  .contact-card,
+  .contact-cards {
+    padding: 32px;
+  }
+
+  .Contact-contact-cards {
+    padding: 40px 20px;
+  }
+
+  .display {
+    left: 0;
+    padding: 10px 0;
+  }
+
+  .flex-wrapper {
+    position: relative;
+    left: 0px;
+  }
+
+  .contact-cards-p {
+    left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-header {
+    padding: 40px 16px;
+  }
+
+  .contact-header h1 {
+    font-size: 24px;
+  }
+
+  .contact-header p {
+    font-size: 14px;
+  }
+
+  .add {
+    position: relative;
+    left: 0px;
+  }
+
+  .contact-card,
+  .contact-cards {
+    padding: 22px;
+    margin-bottom: 0px;
+  }
+
+  .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-cards h3{
+    font-weight: bolder;
+  }
+
+  .primary-btn,
+  .whatsapp-btn,
+  .outline-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .contact-card-title svg,
+  .contact-card-titles svg {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+  }
+
+  .fonts {
+    font-size: 18px !important;
+  }
+
+  .rev {
+    padding: 15px 0px;
+  }
+}
