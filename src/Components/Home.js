@@ -8,10 +8,16 @@ import Testimonial from "./Testimonial";
 import { FaArrowUp } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import { useContext } from "react";
+import { LanguageContext } from "../Context/LanguageContext";
 
 export default function Home() {
   const navigate = useNavigate();
+
+
+  const { t, lang } = useContext(LanguageContext);
+
+  const h = t.home;
 
   const [showArrow, setShowArrow] = useState(false);
 
@@ -24,7 +30,7 @@ export default function Home() {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -39,20 +45,27 @@ export default function Home() {
     <>
       <section className="hero">
         <div className="hero-left">
-          <span className="badge"><SlBadge className="badge-icon" />  Best Doctor Award 2023 - Tamil Nadu Medical Council</span>
-          <h1> Your Health,<br /><span>Our Priority</span></h1>
-          <h3>Dr. Rajesh Kumar</h3>
-          <p className="degree">MBBS, MD (General Medicine), Fellowship in Cardiology</p>
-          <p className="speciality">General Physician & Cardiologist</p>
+          <span className="badge"><SlBadge className="badge-icon" />{h.badge}</span>
+
+          <h1 className={`hero-title ${lang === "ta" ? "hero-title-ta" : "hero-title-en"}`}>
+            {h.heroTitle1}
+            <br />
+            <span >{h.heroTitle2}</span>
+          </h1>
+
+          <h3>{h.doctorName}</h3>
+          <p className="degree">{h.degree}</p>
+          <p className="speciality">{h.speciality}</p>
           <p className="description">
-            With over 15 years of experience, Dr. Rajesh provides comprehensive
-            medical care with a patient-first approach.
+            {h.description}
           </p>
           <div className="buttons">
-            <button className="primary-btn"  onClick={() => {
-                        navigate("/contact");
-                    }}>Book Appointment</button>
-            <button className="outline-btn"><FiPhone /> Call Now</button>
+            <button className="primary-btn" onClick={() => {
+              navigate("/contact");
+            }}>{t.navbar.book}</button>
+            <button className="outline-btn" onClick={() => {
+              window.location.href = "tel:+919876543210";
+            }}><FiPhone />{h.call}</button>
           </div>
         </div>
 
@@ -61,16 +74,16 @@ export default function Home() {
 
           <div className="stats-card">
             <strong><IoMdContacts /> 5000+</strong>
-            <span>Patients Treated</span>
+            <span>{h.patientsTreated}</span>
           </div>
         </div>
       </section>
 
       <section className="barsection">
-        <div><h1>15+</h1><p>Years Experience</p> </div>
-        <div><h1>5000+</h1><p>Happy Patients</p> </div>
-        <div><h1>10+</h1><p>Research Papers</p> </div>
-        <div><h1>50+</h1><p>Health Camps</p> </div>
+        <div><h1>15+</h1><p>{h.yearsExp}</p> </div>
+        <div><h1>5000+</h1><p>{h.happyPatients}</p></div>
+        <div><h1>10+</h1><p>{h.researchPapers}</p> </div>
+        <div><h1>50+</h1><p>{h.healthCamps}</p> </div>
       </section>
 
       <section>

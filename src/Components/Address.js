@@ -1,18 +1,23 @@
 import React from "react";
 import { FaMapMarkerAlt, FaClock, FaPhoneAlt } from "react-icons/fa";
+import { useContext } from "react";
+import { LanguageContext } from "../Context/LanguageContext";
 import "../StyleSheet/address.css";
 
 
 export default function VisitClinic() {
+
+  const { t } = useContext(LanguageContext);
+  const v = t.visitClinic;
+
   return (
     <section className="visit-clinic">
       <div className="visit-container">
 
-
         <div className="clinic-info">
           <div>
-            <h2>Visit Our Clinic</h2>
-            <h4 className="clinic-name">Healing Hands Medical Center</h4>
+            <h2>{v.title}</h2>
+            <h4 className="clinic-name">{v.clinicName}</h4>
           </div>
 
           <div className="info-item">
@@ -20,10 +25,10 @@ export default function VisitClinic() {
               <FaMapMarkerAlt />
             </span>
             <div>
-              <h5>Address</h5>
+              <h5>{v.addressTitle}</h5>
               <p className="address">
-                123, Anna Salai, T. Nagar, <br />
-                Chennai - 600017, Tamil Nadu
+                {v.addressLine1}<br />
+                {v.addressLine2}
               </p>
             </div>
           </div>
@@ -33,9 +38,9 @@ export default function VisitClinic() {
               <FaClock />
             </span>
             <div>
-              <h5>OPD Timings</h5>
-              <p className="address">Mon-Sat: 9:00 AM - 1:00 PM, 5:00 PM - 8:00 PM</p>
-              <p className="address">Sunday: 9:00 AM - 12:00 PM</p>
+              <h5>{v.timingTitle}</h5>
+              <p className="address">{v.timingWeekdays}</p>
+              <p className="address">{v.timingSunday}</p>
             </div>
           </div>
 
@@ -44,9 +49,9 @@ export default function VisitClinic() {
               <FaPhoneAlt />
             </span>
             <div>
-              <h5>Contact</h5>
-              <p className="address">+91 98765 43210</p>
-              <p className="emergency">Emergency: +91 98765 43211</p>
+              <h5>{v.contactTitle}</h5>
+              <p className="address">{v.phone}</p>
+              <p className="emergency">{v.emergency}</p>
             </div>
           </div>
         </div>

@@ -33,6 +33,28 @@
     gap: 36px;
 }
 
+.lang-select {
+    height: 36px;
+    padding: 0 10px;
+    font-family: Inter, system-ui, -apple-system, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1f2937;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.lang-select:focus {
+    outline: none;
+}
+
+.lang-select:disabled {
+    color: #9ca3af;
+    cursor: not-allowed;
+}
+
 .Nav-icon {
     background-color: #2463eb;
     color: white;
@@ -145,14 +167,18 @@
     font-weight: 800;
 }
 
-.hero h1 {
+.hero-title-en {
     font-size: 58px;
     font-weight: 700;
     color: #0f172a;
     line-height: 1.2;
 }
 
-.hero h1 span {
+.hero-title-en span {
+    color: #2563eb;
+}
+
+.hero-title-ta span {
     color: #2563eb;
 }
 
@@ -410,9 +436,6 @@
         gap: 48px;
     }
 
-    .hero h1 {
-        font-size: 48px;
-    }
 
     .hero h3 {
         font-size: 24px;
@@ -479,7 +502,15 @@
     .book {
         width: 100%;
         justify-content: center;
-        margin-top: 20px;
+    }
+
+    .lang-select {
+        padding: 0 100px;
+        border-radius: 0;
+        cursor: pointer;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: auto;
     }
 
     /* ===== Hero ===== */
@@ -500,8 +531,12 @@
         justify-content: center;
     }
 
-    .hero h1 {
+    .hero-title-en {
         font-size: 42px;
+    }
+
+    .hero-title-ta {
+        font-size: 30px;
     }
 
     .hero h3 {
@@ -573,9 +608,14 @@
         gap: 10px;
     }
 
-    .hero h1 {
+    .hero-title-en {
         font-size: 40px;
-        line-height: 1.3;
+         line-height: 1.3;
+    }
+
+    .hero-title-ta {
+        font-size: 30px;
+         line-height: 1.3;
     }
 
     .hero h3 {

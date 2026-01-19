@@ -1,0 +1,578 @@
+{
+    "en": {
+        "navbar": {
+            "doctorName": "Dr. Rajesh Kumar",
+            "speciality": "General Physician & Cardiologist",
+            "home": "Home",
+            "about": "About",
+            "contact": "Contact",
+            "book": "Book Appointment"
+        },
+        "home": {
+            "badge": "Best Doctor Award 2023 - Tamil Nadu Medical Council",
+            "doctorName": "Dr. Rajesh Kumar",
+            "heroTitle1": "Your Health,",
+            "heroTitle2": "Our Priority",
+            "speciality": "General Physician & Cardiologist",
+            "degree": "MBBS, MD (General Medicine), Fellowship in Cardiology",
+            "description": "With over 15 years of experience, Dr. Rajesh provides comprehensive medical care with a patient-first approach.",
+            "call": "Call Now",
+            "patientsTreated": "Patients Treated",
+            "yearsExp": "Years Experience",
+            "happyPatients": "Happy Patients",
+            "researchPapers": "Research Papers",
+            "healthCamps": "Health Camps"
+        },
+        "treatments": {
+            "title": "Specialized Treatments",
+            "subtitle": "Comprehensive care for your family with advanced medical facilities and expert diagnosis.",
+            "items": [
+                {
+                    "title": "General Medicine",
+                    "description": "Complete health checkups, fever treatment, and management of common illnesses."
+                },
+                {
+                    "title": "Cardiac Care & ECG",
+                    "description": "Expert heart care, ECG monitoring, and preventive cardiology services."
+                },
+                {
+                    "title": "Diabetes Management",
+                    "description": "Comprehensive diabetes care, diet counseling, and sugar level monitoring."
+                },
+                {
+                    "title": "Hypertension Treatment",
+                    "description": "Blood pressure management and lifestyle modification plans."
+                },
+                {
+                    "title": "Preventive Screening",
+                    "description": "Full body checkups to detect potential health issues early."
+                },
+                {
+                    "title": "Respiratory Care",
+                    "description": "Treatment for asthma, allergies, and other respiratory conditions."
+                }
+            ],
+            "learnMore": "Learn more",
+            "viewAll": "View All Services"
+        },
+        "visitClinic": {
+            "title": "Visit Our Clinic",
+            "clinicName": "Healing Hands Medical Center",
+            "addressTitle": "Address",
+            "addressLine1": "123, Anna Salai, T. Nagar,",
+            "addressLine2": "Chennai - 600017, Tamil Nadu",
+            "timingTitle": "OPD Timings",
+            "timingWeekdays": "Mon-Sat: 9:00 AM - 1:00 PM, 5:00 PM - 8:00 PM",
+            "timingSunday": "Sunday: 9:00 AM - 12:00 PM",
+            "contactTitle": "Contact",
+            "phone": "+91 98765 43210",
+            "emergency": "Emergency: +91 98765 43211"
+        },
+        "testimonial": {
+            "title": "Patient Stories",
+            "reviews": [
+                {
+                    "message": "Dr. Rajesh is very caring and explains everything clearly. My diabetes is now under control thanks to his treatment.",
+                    "name": "Lakshmi S.",
+                    "role": "Patient",
+                    "initial": "L"
+                },
+                {
+                    "message": "Excellent doctor! He diagnosed my heart condition early and saved my life. Highly recommended.",
+                    "name": "Venkat R.",
+                    "role": "Patient",
+                    "initial": "V"
+                },
+                {
+                    "message": "Very professional and friendly. The clinic is clean and well-equipped. Best doctor in Chennai!",
+                    "name": "Priya M.",
+                    "role": "Patient",
+                    "initial": "P"
+                }
+            ],
+            "ctaTitle": "Ready to prioritize your health?",
+            "ctaDesc": "Book an appointment today for a comprehensive checkup. We are here to help you live a healthier life.",
+            "book": "Book Appointment",
+            "whatsapp": "WhatsApp Booking"
+        },
+        "footer": {
+            "doctorName": "Dr. Rajesh Kumar",
+            "qualification": "MBBS, MD, Fellowship in Cardiology",
+            "description": "Dedicated to providing comprehensive medical care with a patient-first approach. Specializing in general medicine and cardiology.",
+            "quickLinks": "Quick Links",
+            "home": "Home",
+            "about": "About Dr. Rajesh",
+            "book": "Book Appointment",
+            "treatments": "Treatments",
+            "contact": "Contact Us",
+            "contactTitle": "Contact Us",
+            "address": "123, Anna Salai, T. Nagar, Chennai - 600017, Tamil Nadu",
+            "phone": "+91 98765 43210",
+            "email": "dr.rajeshkumar@healinghands.com",
+            "timingsTitle": "OPD Timings",
+            "monSat": "Mon - Sat",
+            "morning": "9:00 AM - 1:00 PM",
+            "evening": "5:00 PM - 8:00 PM",
+            "sunday": "Sunday",
+            "sundayTime": "9:00 AM - 12:00 PM",
+            "copyright": "2026 Dr. Rajesh Kumar. All rights reserved.",
+            "privacy": "Privacy Policy",
+            "disclaimer": "Medical Disclaimer"
+        },
+        "about": {
+            "title": "About Dr. Rajesh Kumar",
+            "subtitle": "A journey of 15+ years dedicated to healing hearts and improving lives through compassionate medical care.",
+            "registration": "Registration",
+            "educationTitle": "Education & Qualifications",
+            "education": [
+                {
+                    "degree": "Fellowship in Cardiology",
+                    "place": "Apollo Hospitals, Chennai (2010)",
+                    "desc": "Specialized training in non-invasive cardiology and cardiac care."
+                },
+                {
+                    "degree": "MD (General Medicine)",
+                    "place": "AIIMS, New Delhi (2008)",
+                    "desc": "Gold medalist. Focused on internal medicine and diagnostics."
+                },
+                {
+                    "degree": "MBBS",
+                    "place": "Madras Medical College, Chennai (2005)",
+                    "desc": "Graduated with distinction."
+                }
+            ],
+            "experienceTitle": "Professional Experience",
+            "experience": [
+                {
+                    "role": "Founder & Chief Physician",
+                    "place": "Healing Hands Medical Center",
+                    "time": "2018 - Present",
+                    "desc": "Leading a team of specialists providing comprehensive care."
+                },
+                {
+                    "role": "Visiting Consultant",
+                    "place": "Fortis Malar Hospital",
+                    "time": "2015 - 2018"
+                },
+                {
+                    "role": "Senior Consultant",
+                    "place": "Apollo Hospitals",
+                    "time": "2010 - 2015"
+                }
+            ],
+            "achievementsTitle": "Achievements & Awards",
+            "achievements": {
+                "award": "Best Doctor Award 2023",
+                "awardOrg": "Tamil Nadu Medical Council",
+                "research": "10+ Research Papers",
+                "researchDesc": "Published in cardiology journals",
+                "patients": "5000+ Patients",
+                "patientsDesc": "Successfully treated",
+                "programs": "50+ Schools",
+                "programsDesc": "Health awareness programs"
+            },
+            "treatmentsTitle": "Treatments & Services",
+            "treatmentsSubtitle": "Comprehensive medical solutions for your well-being",
+            "services": [
+                {
+                    "title": "General Medicine",
+                    "desc": "General Medicine & Health Checkups"
+                },
+                {
+                    "title": "Diabetes Management",
+                    "desc": "Diabetes Management & Care"
+                },
+                {
+                    "title": "Hypertension Treatment",
+                    "desc": "Hypertension Treatment"
+                },
+                {
+                    "title": "Cardiac Care",
+                    "desc": "Cardiac Care & ECG"
+                },
+                {
+                    "title": "Preventive Health Screening",
+                    "desc": "Preventive Health Screening"
+                },
+                {
+                    "title": "Lifestyle Disease Management",
+                    "desc": "Lifestyle Disease Management"
+                },
+                {
+                    "title": "Fever",
+                    "desc": "Fever & Infection Treatment"
+                },
+                {
+                    "title": "Respiratory Care",
+                    "desc": "Respiratory Care"
+                }
+            ],
+            "clinicTitle": "Clinic & Facilities",
+            "tipsTitle": "Doctor's Health Tips",
+            "tips": [
+                "Walk 30 minutes daily for heart health",
+                "Check blood pressure regularly after 40",
+                "Avoid processed foods and excess salt",
+                "Stay hydrated - drink 8 glasses of water daily",
+                "Get annual health checkups"
+            ],
+            "learnMore": "Learn more"
+        },
+        "contactPage": {
+            "header": {
+                "title": "Contact Us",
+                "subtitle": "We are here to help. Book an appointment or reach out for queries."
+            },
+            "bookingForm": {
+                "title": "Book Appointment",
+                "fields": {
+                    "patientName": "Patient Name",
+                    "patientNamePlaceholder": "Enter full name",
+                    "age": "Age",
+                    "agePlaceholder": "Age",
+                    "gender": "Gender",
+                    "genderOptions": [
+                        "Male",
+                        "Female"
+                    ],
+                    "mobile": "Mobile Number",
+                    "mobilePlaceholder": "+91 98765 43210",
+                    "healthIssue": "Health Issue / Symptoms",
+                    "healthIssuePlaceholder": "Describe your problem briefly..."
+                },
+                "confirmBtn": "Confirm Booking",
+                "note": "By booking, you agree to our privacy policy. Emergency? Call +91 98765 43210"
+            },
+            "faq": {
+                "title": "Frequently Asked Questions",
+                "questions": [
+                    {
+                        "q": "Do you accept insurance?",
+                        "a": "Yes, we accept all major health insurance providers. Please bring your card."
+                    },
+                    {
+                        "q": "Do you provide home visits?",
+                        "a": "Yes, home visits are available for emergency cases and senior citizens within 5km radius."
+                    },
+                    {
+                        "q": "What languages do you speak?",
+                        "a": "Dr. Rajesh speaks Tamil, English, and Hindi."
+                    }
+                ]
+            },
+            "contactInfo": {
+                "callUs": "Call Us",
+                "emailUs": "Email Us",
+                "phone": "+91 98765 43210",
+                "email": "dr.rajeshkumar@healinghands.com",
+                "whatsappBtn": "Chat on WhatsApp"
+            },
+            "clinicLocation": {
+                "title": "Clinic Location",
+                "address": "Healing Hands Medical Center, 123, Anna Salai, T. Nagar, Chennai - 600017",
+                "getDirections": "Get Directions"
+            },
+            "opdTimings": {
+                "title": "OPD Timings",
+                "monSat": "Mon – Sat",
+                "monSatTime": "9:00 AM – 1:00 PM,",
+                "time": "5:00 PM – 8:00 PM",
+                "sun": "Sunday",
+                "sunTime": "9:00 AM – 12:00 PM"
+            },
+            "reviews": {
+                "title": "Patient Reviews",
+                "text": "Very professional and friendly. The clinic is clean and well-equipped.",
+                "user": "Priya M. – Patient"
+        }
+    }
+},
+"ta": {
+    "navbar": {
+        "doctorName": "டாக்டர் ராஜேஷ் குமார்",
+        "speciality": "பொது மருத்துவர் & இதய நிபுணர்",
+        "home": "முகப்பு",
+        "about": "எங்களை பற்றி",
+        "contact": "தொடர்பு",
+        "book": "நியமனம் பதிவு செய்ய"
+    },
+    "home": {
+        "badge": "சிறந்த மருத்துவர் விருது 2023 - தமிழ்நாடு மருத்துவ கவுன்சில்",
+        "doctorName": "டாக்டர் ராஜேஷ் குமார்",
+        "heroTitle1": "உங்கள் ஆரோக்கியம்,",
+        "heroTitle2": "எங்கள் முன்னுரிமை",
+        "speciality": "பொது மருத்துவ நிபுணர் & இதய மருத்துவ நிபுணர்",
+        "degree": "MBBS, MD (பொது மருத்துவம்), கார்டியாலஜி ஃபெல்லோஷிப்",
+        "description": "15 ஆண்டுகளுக்கும் மேலான அனுபவத்துடன், நோயாளி நலனை முன்னிலைப்படுத்தி சிறந்த மருத்துவ சேவைகளை வழங்குகிறார்.",
+        "call": "அழைக்கவும்",
+        "patientsTreated": "சிகிச்சை பெற்ற நோயாளிகள்",
+        "yearsExp": "ஆண்டுகள் அனுபவம்",
+        "happyPatients": "திருப்தியான நோயாளிகள்",
+        "researchPapers": "ஆராய்ச்சி கட்டுரைகள்",
+        "healthCamps": "மருத்துவ முகாம்கள்"
+    },
+    "treatments": {
+        "title": "சிறப்பு மருத்துவ சேவைகள்",
+        "subtitle": "உங்கள் குடும்பத்திற்கான முழுமையான சிகிச்சை, மேம்பட்ட மருத்துவ வசதிகள் மற்றும் நிபுணர் பரிசோதனைகளுடன்.",
+        "items": [
+            {
+                "title": "பொது மருத்துவம்",
+                "description": "முழுமையான உடல்நலம் பரிசோதனைகள், காய்ச்சல் சிகிச்சை மற்றும் பொதுவான நோய்களின் மேலாண்மை."
+            },
+            {
+                "title": "இதய பராமரிப்பு & ECG",
+                "description": "நிபுணத்துவ இதய சிகிச்சை, ECG கண்காணிப்பு மற்றும் தடுப்பு இதய மருத்துவ சேவைகள்."
+            },
+            {
+                "title": "நீரிழிவு மேலாண்மை",
+                "description": "முழுமையான நீரிழிவு சிகிச்சை, உணவு ஆலோசனை மற்றும் சர்க்கரை அளவு கண்காணிப்பு."
+            },
+            {
+                "title": "உயர் இரத்த அழுத்த சிகிச்சை",
+                "description": "இரத்த அழுத்த கட்டுப்பாடு மற்றும் வாழ்க்கை முறையில் மாற்ற ஆலோசனைகள்."
+            },
+            {
+                "title": "தடுப்பு பரிசோதனை",
+                "description": "சாத்தியமான உடல்நல பிரச்சினைகளை முன்கூட்டியே கண்டறிய முழு உடல் பரிசோதனை."
+            },
+            {
+                "title": "மூச்சுத் தொடர்பான சிகிச்சை",
+                "description": "ஆஸ்தமா, அலர்ஜி மற்றும் பிற மூச்சு சம்பந்தமான நோய்களுக்கு சிகிச்சை."
+            }
+        ],
+        "learnMore": "மேலும் அறிக",
+        "viewAll": "அனைத்து சேவைகளையும் பார்க்க"
+    },
+    "visitClinic": {
+        "title": "எங்கள் கிளினிக்கிற்கு வருக",
+        "clinicName": "ஹீலிங் ஹேன்ட்ஸ் மருத்துவ மையம்",
+        "addressTitle": "முகவரி",
+        "addressLine1": "123, அண்ணா சாலை, டி.நகர்,",
+        "addressLine2": "சென்னை - 600017, தமிழ்நாடு",
+        "timingTitle": "OPD நேரம்",
+        "timingWeekdays": "திங்கள் - சனி: காலை 9:00 – மதியம் 1:00, மாலை 5:00 – இரவு 8:00",
+        "timingSunday": "ஞாயிறு: காலை 9:00 – மதியம் 12:00",
+        "contactTitle": "தொடர்பு",
+        "phone": "+91 98765 43210",
+        "emergency": "அவசரம்: +91 98765 43211"
+    },
+    "testimonial": {
+        "title": "நோயாளிகளின் அனுபவங்கள்",
+        "reviews": [
+            {
+                "message": "டாக்டர் ராஜேஷ் மிகவும் அக்கறையுடன் சிகிச்சை அளிக்கிறார் மற்றும் அனைத்தையும் தெளிவாக விளக்குகிறார். அவரின் சிகிச்சையால் என் நீரிழிவு தற்போது கட்டுப்பாட்டில் உள்ளது.",
+                "name": "லட்சுமி எஸ்.",
+                "role": "நோயாளர்",
+                "initial": "ல"
+            },
+            {
+                "message": "மிகச் சிறந்த மருத்துவர்! என் இதய பிரச்சினையை ஆரம்பத்திலேயே கண்டறிந்து என் உயிரை காப்பாற்றினார். உறுதியாக பரிந்துரைக்கிறேன்.",
+                "name": "வேங்கட் ஆர்.",
+                "role": "நோயாளர்",
+                "initial": "வ"
+            },
+            {
+                "message": "மிகவும் தொழில்முறை மற்றும் நட்பான அணுகுமுறை. கிளினிக் சுத்தமாகவும் நவீன வசதிகளுடன் உள்ளது. சென்னை நகரின் சிறந்த மருத்துவர்!",
+                "name": "பிரியா எம்.",
+                "role": "நோயாளர்",
+                "initial": "ப"
+            }
+        ],
+        "ctaTitle": "உங்கள் ஆரோக்கியத்தை முன்னுரிமையாக்க தயாரா?",
+        "ctaDesc": "முழுமையான உடல் பரிசோதனைக்காக இன்று തന്നെ நியமனம் பதிவு செய்யுங்கள். ஆரோக்கியமான வாழ்க்கைக்கு நாங்கள் உங்களுக்கு துணை நிற்போம்.",
+        "book": "நியமனம் பதிவு செய்ய",
+        "whatsapp": "வாட்ஸ்அப் மூலம் முன்பதிவு"
+    },
+    "footer": {
+        "doctorName": "டாக்டர் ராஜேஷ் குமார்",
+        "qualification": "MBBS, MD, இதய மருத்துவத்தில் ஃபெல்லோஷிப்",
+        "description": "நோயாளி நலனை முன்னிலைப்படுத்தி, முழுமையான மருத்துவ சேவைகளை வழங்குவதில் அர்ப்பணிக்கப்பட்டவர். பொதுமருத்துவம் மற்றும் இதய மருத்துவத்தில் நிபுணத்துவம் பெற்றவர்.",
+        "quickLinks": "விரைவு இணைப்புகள்",
+        "home": "முகப்பு",
+        "about": "டாக்டர் ராஜேஷ் பற்றி",
+        "book": "நியமனம் பதிவு செய்ய",
+        "treatments": "சிகிச்சைகள்",
+        "contact": "தொடர்பு கொள்ள",
+        "contactTitle": "தொடர்பு கொள்ள",
+        "address": "123, அண்ணா சாலை, டி.நகர், சென்னை - 600017, தமிழ்நாடு",
+        "phone": "+91 98765 43210",
+        "email": "dr.rajeshkumar@healinghands.com",
+        "timingsTitle": "OPD நேரம்",
+        "monSat": "திங்கள் - சனி",
+        "morning": "காலை 9:00 – மதியம் 1:00",
+        "evening": "மாலை 5:00 – இரவு 8:00",
+        "sunday": "ஞாயிறு",
+        "sundayTime": "காலை 9:00 – மதியம் 12:00",
+        "copyright": "2026 டாக்டர் ராஜேஷ் குமார். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.",
+        "privacy": "தனியுரிமை கொள்கை",
+        "disclaimer": "மருத்துவ அறிவிப்பு"
+    },
+    "about": {
+        "title": "டாக்டர் ராஜேஷ் குமார் பற்றி",
+        "subtitle": "கருணையுடனான மருத்துவ சேவையின் மூலம் இதயங்களை குணப்படுத்தி வாழ்க்கையை மேம்படுத்தும் 15 ஆண்டுகளுக்கும் மேலான அனுபவம்.",
+        "registration": "பதிவு எண்",
+        "educationTitle": "கல்வி & தகுதிகள்",
+        "education": [
+            {
+                "degree": "இதய மருத்துவத்தில் ஃபெல்லோஷிப்",
+                "place": "அப்போலோ மருத்துவமனை, சென்னை (2010)",
+                "desc": "அழுத்தமற்ற இதய பரிசோதனை மற்றும் இதய பராமரிப்பில் சிறப்பு பயிற்சி."
+            },
+            {
+                "degree": "MD (பொது மருத்துவம்)",
+                "place": "AIIMS, நியூ டெல்லி (2008)",
+                "desc": "தங்கப் பதக்கம் பெற்றவர். உட்புற மருத்துவம் மற்றும் நோயறிதலில் கவனம்."
+            },
+            {
+                "degree": "MBBS",
+                "place": "மெட்ராஸ் மருத்துவக் கல்லூரி, சென்னை (2005)",
+                "desc": "வித்தியாசமான தேர்ச்சியுடன் பட்டம் பெற்றவர்."
+            }
+        ],
+        "experienceTitle": "தொழில்முறை அனுபவம்",
+        "experience": [
+            {
+                "role": "நிறுவனர் & முதன்மை மருத்துவர்",
+                "place": "ஹீலிங் ஹேண்ட்ஸ் மருத்துவ மையம்",
+                "time": "2018 - தற்போது",
+                "desc": "முழுமையான மருத்துவ சேவைகளை வழங்கும் நிபுணர் குழுவை வழிநடத்துகிறார்."
+            },
+            {
+                "role": "விருந்தினர் ஆலோசகர்",
+                "place": "போர்டிஸ் மலர் மருத்துவமனை",
+                "time": "2015 - 2018"
+            },
+            {
+                "role": "மூத்த ஆலோசகர்",
+                "place": "அப்போலோ மருத்துவமனைகள்",
+                "time": "2010 - 2015"
+            }
+        ],
+        "achievementsTitle": "சாதனைகள் & விருதுகள்",
+        "achievements": {
+            "award": "சிறந்த மருத்துவர் விருது 2023",
+            "awardOrg": "தமிழ்நாடு மருத்துவ கவுன்சில்",
+            "research": "10+ ஆராய்ச்சி கட்டுரைகள்",
+            "researchDesc": "இதய மருத்துவ இதழ்களில் வெளியிடப்பட்டது",
+            "patients": "5000+ நோயாளிகள்",
+            "patientsDesc": "வெற்றிகரமாக சிகிச்சை அளிக்கப்பட்டது",
+            "programs": "50+ பள்ளிகள்",
+            "programsDesc": "சுகாதார விழிப்புணர்வு நிகழ்ச்சிகள்"
+        },
+        "treatmentsTitle": "சிகிச்சைகள் & சேவைகள்",
+        "treatmentsSubtitle": "உங்கள் நலனுக்கான முழுமையான மருத்துவ தீர்வுகள்",
+        "services": [
+            {
+                "title": "பொது மருத்துவம்",
+                "desc": "பொது மருத்துவம் & சுகாதார பரிசோதனைகள்"
+            },
+            {
+                "title": "சர்க்கரை நோய் மேலாண்மை",
+                "desc": "சர்க்கரை நோய் மேலாண்மை & பராமரிப்பு"
+            },
+            {
+                "title": "உயர் இரத்த அழுத்த சிகிச்சை",
+                "desc": "உயர் இரத்த அழுத்த சிகிச்சை"
+            },
+            {
+                "title": "இதய பராமரிப்பு",
+                "desc": "இதய பராமரிப்பு & ECG"
+            },
+            {
+                "title": "முன்தடுப்பு சுகாதார பரிசோதனை",
+                "desc": "முன்தடுப்பு சுகாதார பரிசோதனை"
+            },
+            {
+                "title": "வாழ்க்கைமுறை நோய் மேலாண்மை",
+                "desc": "வாழ்க்கைமுறை நோய் மேலாண்மை"
+            },
+            {
+                "title": "காய்ச்சல்",
+                "desc": "காய்ச்சல் & தொற்று சிகிச்சை"
+            },
+            {
+                "title": "சுவாச சிகிச்சை",
+                "desc": "சுவாச சிகிச்சை"
+            }
+        ],
+        "clinicTitle": "கிளினிக் & வசதிகள்",
+        "tipsTitle": "மருத்துவரின் ஆரோக்கிய குறிப்புகள்",
+        "tips": [
+            "இதய ஆரோக்கியத்திற்காக தினமும் 30 நிமிடம் நடைப்பயிற்சி செய்யுங்கள்",
+            "40 வயதிற்கு பிறகு இரத்த அழுத்தத்தை முறையாக பரிசோதிக்கவும்",
+            "பதப்படுத்தப்பட்ட உணவுகள் மற்றும் அதிக உப்பை தவிர்க்கவும்",
+            "தினமும் 8 கண்ணாடி தண்ணீர் குடித்து உடலை ஈரமாக வைத்திருக்கவும்",
+            "ஆண்டுதோறும் முழுமையான சுகாதார பரிசோதனை செய்யுங்கள்"
+        ],
+        "learnMore": "மேலும் அறிய"
+    },
+    "contactPage": {
+        "header": {
+            "title": "தொடர்பு கொள்ளவும்",
+            "subtitle": "நாங்கள் உதவ தயாராக இருக்கிறோம். சந்திப்பை பதிவு செய்யவும் அல்லது கேள்விகள் கேளவும்."
+        },
+        "bookingForm": {
+            "title": "நியமனம் பதிவு செய்ய",
+            "fields": {
+                "patientName": "ரோகியின் பெயர்",
+                "patientNamePlaceholder": "முழு பெயரை உள்ளிடவும்",
+                "age": "வயது",
+                "agePlaceholder": "வயது",
+                "gender": "பாலினம்",
+                "genderOptions": [
+                    "ஆண்",
+                    "பெண்"
+                ],
+                "mobile": "மொபைல் எண்",
+                "mobilePlaceholder": "+91 98765 43210",
+                "healthIssue": "மருத்துவ பிரச்சனை / அறிகுறிகள்",
+                "healthIssuePlaceholder": "உங்கள் பிரச்சனையை சுருக்கமாக விவரிக்கவும்..."
+            },
+            "confirmBtn": "நியமனத்தை உறுதிப்படுத்தவும்",
+            "note": "நியமனம் செய்தால், நீங்கள் எங்கள் தனியுரிமைக் கொள்கையை ஏற்கின்றீர்கள். அவசர நிலை? அழைக்கவும் +91 98765 43210"
+        },
+        "faq": {
+            "title": "அடிக்கடி கேட்கப்படும் கேள்விகள்",
+            "questions": [
+                {
+                    "q": "நீங்கள் காப்பீட்டை ஏற்கிறீர்களா?",
+                    "a": "ஆம், அனைத்து முக்கியமான சுகாதார காப்பீட்டு வழங்குநர்களையும் ஏற்கின்றோம். உங்கள் அட்டையை கொண்டு வரவும்."
+                },
+                {
+                    "q": "நீங்கள் வீட்டு வருகைகளை வழங்குகிறீர்களா?",
+                    "a": "ஆம், அவசர நிலைகள் மற்றும் மூத்த குடிமக்களுக்கு 5 கி.மீ. உள்ள பகுதியில் வீட்டு வருகைகள் கிடைக்கின்றன."
+                },
+                {
+                    "q": "நீங்கள் எந்த மொழிகளை பேசுகிறீர்கள்?",
+                    "a": "டாக்டர் ராஜேஷ் தமிழ், ஆங்கிலம் மற்றும் இந்தி பேசுகிறார்."
+                }
+            ]
+        },
+        "contactInfo": {
+            "callUs": "அழைக்கவும்",
+            "emailUs": "மின்னஞ்சல்",
+            "phone": "+91 98765 43210",
+            "email": "dr.rajeshkumar@healinghands.com",
+            "whatsappBtn": "WhatsApp-ல் சேட் செய்யவும்"
+        },
+        "clinicLocation": {
+            "title": "மருத்துவமனை இடம்",
+            "address": "உயிர்காக்கும் கைகள் மருத்துவ மையம், 123, அண்ணா சாலை, டி. நகர், சென்னை - 600017",
+            "getDirections": "வழிகள் பெற"
+        },
+        "opdTimings": {
+            "title": "OPD நேரங்கள்",
+            "monSat": "திங்கள் – சனி",
+            "monSatTime": "காலை 9:00 – 1:00,",
+            "time": "மாலை 5:00 – 8:00",
+            "sun": "ஞாயிறு",
+            "sunTime": "காலை 9:00 – 12:00"
+        },
+        "reviews": {
+            "title": "ரோகி மதிப்புரைகள்",
+            "text": "மிகத் திறமைமிக்கவரும் நட்பு மனப்பான்மையுள்ளவரும். மருத்துவமனை சுத்தமாகவும் நன்றாக உபகரணங்கள் கொண்டதாகவும் உள்ளது.",
+            "user": "பிரியா எம். – ரோகி"
+        }
+    }
+}
+}

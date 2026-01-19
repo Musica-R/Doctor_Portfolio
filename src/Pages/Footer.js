@@ -7,11 +7,15 @@ import { FaInstagram } from "react-icons/fa";
 import { ImFacebook2 } from "react-icons/im";
 import { MdOutlineCopyright } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
-
+import { useContext } from "react";
+import { LanguageContext } from "../Context/LanguageContext";
 
 export default function Footer() {
-   
+
   const navigate = useNavigate();
+
+  const { t } = useContext(LanguageContext);
+  const f = t.footer;
 
 
   return (
@@ -24,16 +28,12 @@ export default function Footer() {
           <div className="Nav-head">
             <div className="Nav-icon"><FaStethoscope /></div>
             <div>
-              <h3 className="dr">Dr. Rajesh Kumar</h3>
-              <p className="para MBBS">MBBS, MD, Fellowship in Cardiology</p>
+              <h3 className="dr">{f.doctorName}</h3>
+              <p className="para MBBS">{f.qualification}</p>
             </div>
           </div>
 
-          <p className="footer-desc">
-            Dedicated to providing comprehensive medical care with a
-            patient-first approach. Specializing in general medicine and
-            cardiology.
-          </p>
+          <p className="footer-desc">{f.description}</p>
 
           <div className="footer-icon">
             <SiYoutube className="footer-iconS" />
@@ -45,77 +45,64 @@ export default function Footer() {
 
 
         <div className="footer-col">
-          <h4 className="footer-heading">Quick Links</h4>
+          <h4 className="footer-heading">{f.quickLinks}</h4>
           <ul className="footer-links">
-            <li onClick={() => {
-                        navigate("/");
-                    }}>Home</li>
-            <li onClick={() => {
-                        navigate("/about");
-                    }}>About Dr. Rajesh</li>
-            <li onClick={() => {
-                        navigate("/contact");
-                    }}>Book Appointment</li>
-            <li onClick={() => {
-                        navigate("/");
-                    }}>Treatments</li>
-            <li onClick={() => {
-                        navigate("/contact");
-                    }}>Contact Us</li>
+            <li onClick={() => { navigate("/"); }}>{f.home}</li>
+            <li onClick={() => { navigate("/about"); }}>{f.about}</li>
+            <li onClick={() => { navigate("/contact"); }}>{f.book}</li>
+            <li onClick={() => { navigate("/"); }}>{f.treatments}</li>
+            <li onClick={() => { navigate("/contact"); }}>{f.contact}</li>
           </ul>
         </div>
 
 
         <div className="footer-col">
-          <h4 className="footer-heading">Contact Us</h4>
+          <h4 className="footer-heading">{f.contactTitle}</h4>
 
           <div className="footer-contact">
             <SlLocationPin className="blue" />
-            <span>
-              123, Anna Salai, T. Nagar,
-              Chennai - 600017, Tamil Nadu
-            </span>
+            <span>{f.address}</span>
           </div>
 
           <div className="footer-contact">
-            <FiPhone  className="blue" />
-            <span>+91 98765 43210</span>
+            <FiPhone className="blue" />
+            <span>{f.phone}</span>
           </div>
 
           <div className="footer-contact">
-            <MdOutlineMailOutline  className="blue" />
-            <span>dr.rajeshkumar@healinghands.com</span>
+            <MdOutlineMailOutline className="blue" />
+            <span>{f.email}</span>
           </div>
         </div>
 
 
         <div className="footer-col">
-          <h4 className="footer-heading">OPD Timings</h4>
+          <h4 className="footer-heading">{f.timingsTitle}</h4>
 
           <div className="timing">
-            <span>Mon - Sat:</span>
-            <span className="time">9:00 AM - 1:00 PM</span>
+            <span>{f.monSat}</span>
+            <span className="time">{f.morning}</span>
           </div>
 
           <div className="timing">
             <span></span>
-            <span className="time">5:00 PM - 8:00 PM</span>
+            <span className="time">{f.evening}</span>
           </div>
-           <br />
+          <br />
           <div className="timing">
-            <span>Sunday:</span>
-            <span className="time">9:00 AM - 12:00 PM</span>
+            <span>{f.sunday}</span>
+            <span className="time">{f.sundayTime}</span>
           </div>
         </div>
       </div>
 
 
       <div className="footer-bottom">
-        <span><MdOutlineCopyright /> 2026 Dr. Rajesh Kumar. All rights reserved.</span>
+        <span><MdOutlineCopyright />{f.copyright}</span>
         <div className="footer-policy">
-          <span>Privacy Policy</span>
+          <span>{f.privacy}</span>
           <span>|</span>
-          <span>Medical Disclaimer</span>
+          <span>{f.disclaimer}</span>
         </div>
       </div>
     </footer>

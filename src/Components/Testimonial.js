@@ -1,58 +1,55 @@
 import { FaRegStar } from "react-icons/fa";
 import '../StyleSheet/Testimonial.css'
 import { FiPhone } from "react-icons/fi";
+import { useContext } from "react";
+import { LanguageContext } from "../Context/LanguageContext";
+import { useNavigate } from "react-router-dom";
 
 export default function Testimonial() {
+
+    const { t } = useContext(LanguageContext);
+    const data = t.testimonial;
+    const navigate = useNavigate();
+
     return (
         <div className='testimonial'>
-            <h3 className="h3">Patient Stories</h3>
+            <h3 className="h3">{data.title}</h3>
 
             <div className="test-cont">
 
-                <div className="testimonial-container">
-                    <div className="star"><FaRegStar className="test-star" /><FaRegStar className="test-star" /><FaRegStar className="test-star" /><FaRegStar className="test-star" /><FaRegStar className="test-star" /> </div>
-                    <p>"Dr. Rajesh is very caring and explains everything clearly. My diabetes is now under control thanks to his treatment."</p>
-                    <div className="Nav-head">
-                        <div className="Nav-icons">L</div>
-                        <div>
-                            <h3 className="Test-text">Lakshmi S.</h3>
-                            <p className="paras">Patient</p>
+                {data.reviews.map((item, index) => (
+                    <div className="testimonial-container" key={index}>
+                        <div className="star">
+                            {[...Array(5)].map((_, i) => (
+                                <FaRegStar key={i} className="test-star" />
+                            ))}
+                        </div>
+
+                        <p>"{item.message}"</p>
+
+                        <div className="Nav-head">
+                            <div className="Nav-icons">{item.initial}</div>
+                            <div>
+                                <h3 className="Test-text">{item.name}</h3>
+                                <p className="paras">{item.role}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="testimonial-container">
-                    <div className="star"><FaRegStar className="test-star" /><FaRegStar className="test-star" /><FaRegStar className="test-star" /><FaRegStar className="test-star" /><FaRegStar className="test-star" /> </div>
-                    <p>"Excellent doctor! He diagnosed my heart
-                        condition early and saved my life. Highly recommended."</p>
-                    <div className="Nav-head">
-                        <div className="Nav-icons">v</div>
-                        <div>
-                            <h3 className="Test-text">Venkat R.</h3>
-                            <p className="paras">Patient</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="testimonial-container">
-                    <div className="star"><FaRegStar className="test-star" /><FaRegStar className="test-star" /><FaRegStar className="test-star" /><FaRegStar className="test-star" /><FaRegStar className="test-star" /> </div>
-                    <p>"Very professional and friendly. The clinic is
-                        clean and well-equipped. Best doctor in Chennai!"</p>
-                    <div className="Nav-head">
-                        <div className="Nav-icons">P</div>
-                        <div>
-                            <h3 className="Test-text">Priya M.</h3>
-                            <p className="paras">Patient</p>
-                        </div>
-                    </div>
-                </div>
+                ))}
+
 
             </div>
 
             <section className="box-test">
-                <h2>Ready to prioritize your health?</h2>
-                <p>Book an appointment today for a comprehensive checkup. We are here to help you live a healthier life.</p>
+                <h2>{data.ctaTitle}</h2>
+                <p>{data.ctaDesc}</p>
                 <div className="buttonss">
-                    <button className="primary-btns">Book Appointment</button>
-                    <button className="outline-btns"><FiPhone />  WhatsApp Booking</button>
+                    <button className="primary-btns" onClick={() => {
+                        navigate("/contact");
+                    }}>{data.book}</button>
+                    <button className="outline-btns" onClick={() => {
+                        window.open("https://wa.me/919876543210", "_blank");
+                    }}><FiPhone /> {data.whatsapp}</button>
                 </div>
             </section>
 

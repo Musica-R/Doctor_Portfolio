@@ -1,7 +1,5 @@
 import "../StyleSheet/Contact.css"
-import {
-  FaWhatsapp,
-} from "react-icons/fa";
+import { FaWhatsapp, } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 import { IoCalendarClearOutline } from "react-icons/io5";
 import { GoQuestion } from "react-icons/go";
@@ -9,9 +7,13 @@ import { FiClock } from "react-icons/fi";
 import { CiStar } from "react-icons/ci";
 import { FaArrowUp } from "react-icons/fa";
 import { useEffect, useState } from "react";
-
+import { useContext } from "react";
+import { LanguageContext } from "../Context/LanguageContext";
 
 export default function Contact() {
+
+  const { t } = useContext(LanguageContext);
+  const c = t.contactPage;
 
   const [showArrow, setShowArrow] = useState(false);
 
@@ -38,8 +40,8 @@ export default function Contact() {
   return (
     <>
       <div className="contact-header">
-        <h1>Contact Us</h1>
-        <p>We are here to help. Book an appointment or reach out for queries.</p>
+        <h1>{c.header.title}</h1>
+        <p>{c.header.subtitle}</p>
       </div>
       <div className="contact-page">
 
@@ -55,43 +57,41 @@ export default function Contact() {
             <div className="contact-card booking-contact-card Contact-contact-cards">
               <div className="contact-card-title">
                 <IoCalendarClearOutline className="con-ic" />
-                <h3>Book Appointment</h3>
+                <h3>{c.bookingForm.title}</h3>
               </div>
 
               <div className="form-grid">
                 <div>
-                  <label>Patient Name</label>
-                  <input placeholder="Enter full name" />
+                  <label>{c.bookingForm.fields.patientName}</label>
+                  <input placeholder={c.bookingForm.fields.patientNamePlaceholder} />
                 </div>
 
                 <div>
-                  <label>Age</label>
-                  <input placeholder="Age" />
+                  <label>{c.bookingForm.fields.age}</label>
+                  <input placeholder={c.bookingForm.fields.agePlaceholder} />
                 </div>
 
                 <div>
-                  <label>Gender</label>
+                  <label>{c.bookingForm.fields.gender}</label>
                   <select>
-                    <option>Male</option>
-                    <option>Female</option>
+                    {c.bookingForm.fields.genderOptions.map((g, i) => (
+                      <option key={i}>{g}</option>
+                    ))}
                   </select>
                 </div>
 
                 <div>
-                  <label>Mobile Number</label>
-                  <input placeholder="+91 98765 43210" className="labels" />
+                  <label>{c.bookingForm.fields.mobile}</label>
+                  <input placeholder={c.bookingForm.fields.mobilePlaceholder} className="labels" />
                 </div>
               </div>
 
-              <label>Health Issue / Symptoms</label>
-              <textarea placeholder="Describe your problem briefly..." />
+              <label>{c.bookingForm.fields.healthIssue}</label>
+              <textarea placeholder={c.bookingForm.fields.healthIssuePlaceholder} />
 
-              <button className="primary-btn">Confirm Booking</button>
+              <button className="primary-btn">{c.bookingForm.confirmBtn}</button>
 
-              <p className="form-note">
-                By booking, you agree to our privacy policy.
-                Emergency? Call +91 98765 43210
-              </p>
+              <p className="form-note">{c.bookingForm.note}</p>
             </div>
 
             {/* FAQ */}
@@ -99,27 +99,17 @@ export default function Contact() {
 
               <div className="contact-card-titles">
                 <GoQuestion />
-                <h3>Frequently Asked Questions</h3>
+               <h3>{c.faq.title}</h3>
               </div>
 
               <div className="flex-wrapper">
-
-                <div className="question">
-                  <h4>Do you accept insurance?</h4>
-                  <p>Yes, we accept all major health insurance providers. Please bring your card.</p>
-                </div>
-
-                <div className="question">
-                  <h4>Do you provide home visits?</h4>
-                  <p>Yes, home visits are available for emergency cases and senior citizens within 5km radius.</p>
-                </div>
-
-                <div className="question">
-                  <h4>What languages do you speak?</h4>
-                  <p>Dr. Rajesh speaks Tamil, English, and Hindi.</p>
-                </div>
-              </div>
-
+                {c.faq.questions.map((q, i) => (
+                  <div className="question" key={i}>
+                    <h4>{q.q}</h4>
+                    <p>{q.a}</p>
+                  </div>
+                ))}
+             </div>
             </div>
           </div>
 
@@ -130,17 +120,19 @@ export default function Contact() {
             <div className="contact-card right-col">
 
               <div className="right-col call">
-                <p className="small-label">Call Us</p>
-                <h3>+91 98765 43210</h3>
+                 <p className="small-label">{c.contactInfo.callUs}</p>
+                <h3>{c.contactInfo.phone}</h3>
               </div>
 
               <div className="right-col call">
-                <p className="small-label">Email Us</p>
-                <p>dr.rajeshkumar@healinghands.com</p>
+                <p className="small-label">{c.contactInfo.emailUs}</p>
+                <p>{c.contactInfo.email}</p>
               </div>
 
-              <button className="whatsapp-btn">
-                <FaWhatsapp /> Chat on WhatsApp
+              <button className="whatsapp-btn"  onClick={() => {
+                        window.open("https://wa.me/919876543210", "_blank");
+                    }}>
+                <FaWhatsapp /> {c.contactInfo.whatsappBtn}
               </button>
             </div>
 
@@ -149,14 +141,10 @@ export default function Contact() {
 
               <div className="contact-card-titles">
                 <IoLocationOutline />
-                <h3>Clinic Location</h3>
+                 <h3>{c.clinicLocation.title}</h3>
               </div>
 
-              <p className="add">
-                Healing Hands Medical Center<br />
-                123, Anna Salai, T. Nagar,<br />
-                Chennai - 600017
-              </p>
+            <p className="add">{c.clinicLocation.address}</p>
 
               <div className="map-placeholder">
                 <iframe
@@ -172,7 +160,7 @@ export default function Contact() {
 
               </div>
 
-              <button className="outline-btn">Get Directions</button>
+              <button className="outline-btn">{c.clinicLocation.getDirections}</button>
             </div>
 
             {/* OPD Timings */}
@@ -180,30 +168,29 @@ export default function Contact() {
 
               <div className="contact-card-titles">
                 <FiClock className="fonts" />
-                <h3>OPD Timings</h3>
+                 <h3>{c.opdTimings.title}</h3>
               </div>
 
               <div className="display">
                 <p>
-                  Mon – Sat
+                  {c.opdTimings.monSat}
                   <span className="contact-cards-p">
-                    9:00 AM – 1:00 PM <br />
+                   {c.opdTimings.monSatTime}<br />
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    5:00 PM – 8:00 PM
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   {c.opdTimings.time}
                   </span>
                 </p>
 
-                <p>Sunday  <span className="contact-cards-p">9:00 AM – 12:00 PM </span></p>
+                <p>{c.opdTimings.sun}<span className="contact-cards-p">{c.opdTimings.sunTime}</span></p>
               </div>
 
             </div>
 
             {/* Reviews */}
             <div className="contact-cards">
-              <h3>Patient Reviews</h3>
-
+              <h3>{c.reviews.title}</h3>
               <div className="rev">
                 <div className="stars">
                   {[...Array(5)].map((_, i) => (
@@ -211,11 +198,8 @@ export default function Contact() {
                   ))}
                 </div>
 
-                <p className="review-text">
-                  “Very professional and friendly. The clinic is clean and well-equipped.”
-                </p>
-
-                <p className="review-user">Priya M. – Patient</p>
+                <p className="review-text">{c.reviews.text}</p>
+                <p className="review-user">{c.reviews.user}</p>
               </div>
             </div>
 
