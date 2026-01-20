@@ -21,8 +21,14 @@
   font-weight: 500;
 }
 
-.clinic-info h2 {
+
+.hero-title-h2en {
   font-size: 32px;
+  font-weight: 700;
+  
+}
+.hero-title-h2ta{
+  font-size: 25px;
   font-weight: 700;
 }
 

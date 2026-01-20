@@ -7,7 +7,7 @@ import "../StyleSheet/address.css";
 
 export default function VisitClinic() {
 
-  const { t } = useContext(LanguageContext);
+  const { t,lang } = useContext(LanguageContext);
   const v = t.visitClinic;
 
   return (
@@ -16,7 +16,7 @@ export default function VisitClinic() {
 
         <div className="clinic-info">
           <div>
-            <h2>{v.title}</h2>
+            <h2 className={`${lang === "ta" ? "hero-title-h2ta": "hero-title-h2en"}`}>{v.title}</h2>
             <h4 className="clinic-name">{v.clinicName}</h4>
           </div>
 

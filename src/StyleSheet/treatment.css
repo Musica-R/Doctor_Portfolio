@@ -10,12 +10,15 @@
   text-align: center;
 }
 
-h2 {
+.hero-title-h2e {
   font-size: 36px;
   font-weight: 700;
   
 }
-
+.hero-title-h2t{
+  font-size: 25px;
+  font-weight: 700;
+}
 .subtitle {
   margin-top: 12px;
   color: #64748b;
@@ -101,6 +104,11 @@ h2 {
   color: #fff;
 }
 
+.arrow{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+}
 @media (max-width: 1024px) {
 
   .treatments {

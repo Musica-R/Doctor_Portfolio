@@ -14,7 +14,7 @@ export default function Footer() {
 
   const navigate = useNavigate();
 
-  const { t } = useContext(LanguageContext);
+  const { t ,lang} = useContext(LanguageContext);
   const f = t.footer;
 
 
@@ -80,17 +80,19 @@ export default function Footer() {
           <h4 className="footer-heading">{f.timingsTitle}</h4>
 
           <div className="timing">
-            <span>{f.monSat}</span>
+            <span className={`hero-title ${lang === "ta" ? "hero-title-tf" : "hero-title-ef"}`}>{f.monSat}</span>
             <span className="time">{f.morning}</span>
           </div>
 
-          <div className="timing">
-            <span></span>
+          <div className="timing" >
+            <span className={`hero-title ${lang === "ta" ? "hero-title-tf" : "hero-title-ef"}`}> &nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
             <span className="time">{f.evening}</span>
           </div>
           <br />
           <div className="timing">
-            <span>{f.sunday}</span>
+            <span className={`hero-title ${lang === "ta" ? "hero-title-tf" : "hero-title-ef"}`}>{f.sunday}</span>
             <span className="time">{f.sundayTime}</span>
           </div>
         </div>

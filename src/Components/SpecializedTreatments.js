@@ -24,13 +24,13 @@ export default function SpecializedTreatments() {
   ];
 
 
-  const { t } = useContext(LanguageContext);
+  const { t ,lang} = useContext(LanguageContext);
   const data = t.treatments;
 
   return (
     <section className="treatments">
       <div className="container">
-        <h2>{data.title}</h2>
+        <h2 className={`${lang === "ta" ? "hero-title-h2t": "hero-title-h2e"}`}>{data.title}</h2>
         <p className="subtitle">{data.subtitle}</p>
 
         <div className="grid">
@@ -42,14 +42,14 @@ export default function SpecializedTreatments() {
               <p>{item.description}</p>
               <p className="learn">
                 <span className="span-learn">{data.learnMore}</span>
-                <span><VscArrowSmallRight /></span>
+                <span className="arrow"><VscArrowSmallRight /></span>
               </p>
             </div>
           ))}
 
         </div>
 
-        <button className="cta"> {data.viewAll} <VscArrowSmallRight /></button>
+        <button className="cta"> {data.viewAll}</button>
       </div>
     </section>
   );

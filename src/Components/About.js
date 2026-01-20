@@ -137,7 +137,7 @@ export default function About() {
                 <h4>{item.title}</h4>
                 <p>{item.desc}</p>
                 <span className="learn-more">
-                  {t.about.learnMore} →
+                  {t.about.learnMore} <span className='larrow'>→</span>
                 </span>
               </div>
             ))}

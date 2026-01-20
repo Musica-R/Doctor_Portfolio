@@ -394,11 +394,17 @@ body {
 }
 
 .learn-more {
-  display: inline-block;
   padding-top: 10px;
   font-size: 13px;
   color: #2563eb;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.larrow{
+  font-size: 15px;
+  font-weight: 600;
 }
 
 /* ===== Clinic ===== */

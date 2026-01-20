@@ -49,7 +49,7 @@ export default function Home() {
 
           <h1 className={`hero-title ${lang === "ta" ? "hero-title-ta" : "hero-title-en"}`}>
             {h.heroTitle1}
-            <br />
+            {/* <br /> */}
             <span >{h.heroTitle2}</span>
           </h1>
 
@@ -80,10 +80,10 @@ export default function Home() {
       </section>
 
       <section className="barsection">
-        <div><h1>15+</h1><p>{h.yearsExp}</p> </div>
-        <div><h1>5000+</h1><p>{h.happyPatients}</p></div>
-        <div><h1>10+</h1><p>{h.researchPapers}</p> </div>
-        <div><h1>50+</h1><p>{h.healthCamps}</p> </div>
+        <div className="Exp-bar"><h1>15+</h1><p>{h.yearsExp}</p> </div>
+        <div className="Exp-bar"><h1>5000+</h1><p>{h.happyPatients}</p></div>
+        <div className="Exp-bar"><h1>10+</h1><p>{h.researchPapers}</p> </div>
+        <div className="Exp-bar"><h1>50+</h1><p>{h.healthCamps}</p> </div>
       </section>
 
       <section>
